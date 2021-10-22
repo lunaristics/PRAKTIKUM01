@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Orders</title>
+</head>
+
+<body style="padding: 0; margin: 0;">
+    <header>
+        <nav style="background-color: pink; display: flex; "> 
+            <ul class="menu-ul" style="font-family: Arial, Helvetica, sans-serif; display: flex; gap: 10px; list-style-type: none;"> 
+              <li> <!-- Home --> 
+                <a href="/home"">Home</a> |
+              </li> 
+              <li> <!-- Generate Link -->
+                <a href="/generatelink">Generate Link</a> |
+              </li> 
+              <li> <!-- Transaction History -->
+                <a href="/transactionhistory">Transaction History</a> |
+              </li> 
+              <li> <!-- Policy -->
+                <a href="/policy">Policy</a> |
+              </li>
+              <li> <!-- Logout -->
+                <a href="/contact">Logout</a> |
+              </li> 
+            </ul> 
+          </nav>
+
+          <main>
+            <section>
+              <img src="strawberry-sweater.jpg" width="200">
+              <form action="/client.php" method="POST" enctype="multipart/form-data">
+                  <input type="file" name="photo">
+              </form>
+            </section>
+
+            <section>
+              <table>
+                  <tr>
+                      <td>Title Here :</td>
+                      <td><input type="text" style="padding-left: 100px;"></td>
+                  </tr>
+                  <tr>
+                      <td>Description :</td>
+                      <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                  </tr>
+                  <tr>
+                      <td>Account Number :</td>
+                      <td><input type="number" name="number" id="number"></td>
+                  </tr>
+                  <tr>
+                      <td>Payment Method :</td>
+                      <td><input type="text" name="Payment Method" list="Payment Method">
+                              <datalist id="Payment Method">
+                                  <option value="DANA"></option>
+                                  <option value="Gopay"></option>
+                                  <option value="TF Bank"></option>
+                                  <option value="ShopeePay"></option>
+                                  <option value="OVO"></option>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Account Holder</td>
+                      <td>
+                          <input type="text" value="Name Here"></td>
+                  </tr>
+                  <tr>
+                      <td>Transaction :</td>
+                      <td>
+                          <select name="Transaction" id="">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                          </select>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td> </td>
+                      <td>* if the Transaction is for 3 person, choose 3 form the drop-down list <br>
+                          <input type="checkbox">Send to Mobile Phone <br>
+                          <input type="checkbox">Send to Email
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Send to Mobile Phone</td>
+                      <td><input type="number"></td>
+                  </tr>
+                  <tr>
+                      <td>Send to Email</td>
+                      <td><input type="email"></td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <br><br><br>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><input type="submit" value="Generate Nabr Link" style="background-color: pink;"></td>
+                  </tr>
+              </table>
+            </section>
+          </main>
+    </header>
+</body>
+</html>

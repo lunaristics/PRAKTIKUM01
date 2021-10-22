@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza</title>
+</head>
+
+<body>
+    <h1>Black Goose Pizza - Pizza On demand</h1>
+    <p>Our 12" wood fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour!</p>
+    <form method="POST" action="login.php">
+        Name : <input type="text" name="Name"><br>
+        Adress : <input type="text" name="Adress"><br>
+        Telephone Number : <input type="text" name="Telephone Number"><br>
+        Email : <input type="text" name="Email"><br>
+        Delivery Instructions : <input type="text" name="Delivery Instructions"><br>
+    </form>
+
+    <h4><b>Design Your Dream Pizza</b></h4>
+    <p>Pizza Specs</p>
+
+    <p>Crust (Choose One)</p>
+    <ul>
+        <li><input type="radio" name="Crust" value="Classic White">Classic White</li>
+        <li><input type="radio" name="Crust" value="Multigrain">Multigrain</li>
+        <li><input type="radio" name="Crust" value="Cheese stuffed-crust">Cheese-stuffed crust</li>
+        <li><input type="radio" name="Crust" value="Glutten Free">Glutten Free</li>
+    </ul>
+
+    <p>Toppings (Choose as many as you want :</p>
+    <form action="/action_page.php">
+        <input type="checkbox" id="toppings1" name="toppings1" value="Red Sauce"><label for=toppings1>Red Sauce</label><br>
+        <input type="checkbox" id="toppings2" name="toppings2" value="White Sauce"><label for=toppings2>White Sauce</label><br>
+        <input type="checkbox" id="toppings3" name="toppings3" value="Mozarella Cheese"><label for=toppings3>Mozarella Cheese</label><br>
+        <input type="checkbox" id="toppings4" name="toppings4" value="Pepperoni"><label for=toppings4>Pepperoni</label><br>
+        <input type="checkbox" id="toppings5" name="toppings5" value="Mushrooms"><label for=toppings5>Mushrooms</label><br>
+        <input type="checkbox" id="toppings6" name="toppings6" value="Peppers"><label for=toppings6>Peppers</label><br>
+        <input type="checkbox" id="toppings7" name="toppings7" value="Anchovies"><label for=toppings7>Anchovies</label><br>
+    </form>
+
+    <p>Number</p>
+    <p>How Many Pizzas : <input type="text" list="edulevel" name="education">
+    <datalist id="edulevel">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+
+    </datalist>
+
+    <p><input type="submit" value="Bring me a pizza!">
+    <input type="reset"></input></p>
+</body>
+</html>
